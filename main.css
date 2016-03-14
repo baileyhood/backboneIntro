@@ -1,0 +1,7 @@
+
+article img {
+  max-width: 400px;
+}
+.inactive {
+  display: none;
+}
