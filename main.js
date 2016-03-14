@@ -88,7 +88,7 @@ getInputFromDom: function () {  //getting input and adding to models
 
 displayEditForm: function (){
 event.preventDefault();
-console.log ($(this).parents().data('id'));
+$('.edit-form').removeClass('inactive');
 if ($(this).parents().data('id')) {
 $(this).siblings('.edit-container').append(editForm);
 }
