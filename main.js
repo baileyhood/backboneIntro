@@ -4,7 +4,7 @@ templates.movie = [
   "<article data-id = '<%= movie.id %>'>",
   "<img src = '<%= movie.img %>'>",
   "<h3> <%= movie.title %> </h3>",
-  "<p><%= movie.director %></p>",
+  "<p><%= movie.year %></p>",
   "<p><%= movie.desc %></p>",
   "<button class = 'delete'> delete </button>",
   "<button class = 'edit'> edit </button>",
@@ -42,7 +42,7 @@ var page = {
   addOne: function (el) {
     el.attributes.id = el.cid; //assigning the model's cid to it's attributes
     var markup = page.movieTmpl ({movie: el.toJSON()});
-    $('.main-container').append(markup);
+    $('.main-container').prepend(markup);
   },
 
   addAll: function () {
@@ -69,12 +69,12 @@ var page = {
 getInputFromDom: function () {  //getting input and adding to models
   event.preventDefault();
   var title = $('input[name="title"]').val();
-  var director = $('input[name="director"]').val();
+  var year = $('input[name="year"]').val();
   var img = $('input[name="img"]').val();
   var desc = $('input[name="desc"]').val();
    var newMovieInfo = {
      title: title,
-     director: director,
+     year: year,
      img: img,
      desc: desc
    };
@@ -97,12 +97,12 @@ $(this).siblings('.edit-container').append(editForm);
 getEditInputFromDom: function () {
   event.preventDefault();
   var title = $('input[name="title-edit"]').val();
-  var director = $('input[name="director-edit"]').val();
+  var year = $('input[name="year-edit"]').val();
   var img = $('input[name="img-edit"]').val();
   var desc = $('input[name="desc-edit"]').val();
   var editedMovieInfo = {
      title: title,
-     director: director,
+     year: year,
      img: img,
      desc: desc
    };

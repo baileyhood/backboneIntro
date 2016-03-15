@@ -1,7 +1,51 @@
-
+body {
+  font-family: 'Roboto Slab', serif;
+}
 article img {
   max-width: 400px;
 }
 .inactive {
   display: none;
 }
+.navigation-section {
+  padding: 28px 0px;
+  background-color: #F4F4F4;
+  position: fixed;
+  width: 100%;
+  -webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2);
+-moz-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2);
+box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2);
+}
+.form-container {
+  margin: 0 auto;
+  width: 70%;
+}
+
+.main-container {
+  padding-top: 105px;
+  margin: 0 auto;
+  width: 70%;
+}
+
+h3 {
+  font-size: 1.3em;
+}
+
+.edit-form {
+  clear: both;
+  margin: 15px 0;
+}
+
+.main-container img {
+  float: left;
+  margin-right: 15px;
+}
+
+article {
+  clear: both;
+  margin-bottom: 50px;
+}
+
+/*.info {
+  float: right;
+}*/
