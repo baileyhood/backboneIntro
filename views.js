@@ -13,6 +13,7 @@ var FormView = Backbone.View.extend({
       desc: this.$el.find('.desc').val(),
     });
     this.$el.find('input').val(''); //clearing input
+    this.$el.find('textarea').val(''); //clearing input
     this.collection.add(this.model);
   },
   initialize: function () { //WTF?
